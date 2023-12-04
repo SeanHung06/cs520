@@ -92,11 +92,15 @@ public class TicTacToeGame {
     protected void move(JButton block) {
 	Logger.log("uses");
 	
+	Logger.log("manipulates");
+	--movesLeft;
 	--movesLeft;
 	if(movesLeft%2 == 1) {
 	    playerturn.setText("'X': Player 1");
+		Logger.log("updates");
 	} else{
 	    playerturn.setText("'O': Player 2");
+		Logger.log("updates");
 	}
 	
 	if(player.equals("1")) {
@@ -441,7 +445,7 @@ public class TicTacToeGame {
      * Resets the game to be able to start playing again.
      */
     public void resetGame() {
-	Logger.log("uses");
+	Logger.log("uses");		
 	
         for(int row = 0;row<3;row++) {
             for(int column = 0;column<3;column++) {
@@ -450,8 +454,10 @@ public class TicTacToeGame {
 		updateBlock(row,column);
             }
         }
+		Logger.log("manipulates");
         player = "1";
         movesLeft = 9;
+		Logger.log("updates");
         playerturn.setText("Player 1 to play 'X'");
     }
 }
