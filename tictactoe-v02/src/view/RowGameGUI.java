@@ -52,6 +52,8 @@ public class RowGameGUI implements RowGameView {
     }
 
     public void update(RowGameModel gameModel) {
+    Logger.log("updates");
+
 	boardGameView.update(gameModel);
 	statusView.update(gameModel);
     }

@@ -28,6 +28,7 @@ public class RowGameModel
 
     public Player getPlayer() {
 	return this.player;
+    Logger.log("manipulates");
     }
 
     public void setPlayer(Player player) {
@@ -43,6 +44,8 @@ public class RowGameModel
 
     public void setMovesLeft(int movesLeft) {
 	this.movesLeft = movesLeft;
+    Logger.log("manipulates");
+
     }
 
     public String getFinalResult() {
@@ -51,5 +54,7 @@ public class RowGameModel
 
     public void setFinalResult(String finalResult) {
 	this.finalResult = finalResult;
+    Logger.log("manipulates");
+    
     }
 }

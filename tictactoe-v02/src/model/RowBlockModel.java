@@ -52,6 +52,8 @@ public class RowBlockModel
 	    throw new IllegalArgumentException("The value must be non-null.");
 	}
 	this.contents = value;
+    Logger.log("manipulates");
+
     }
 
     /**
@@ -65,6 +67,8 @@ public class RowBlockModel
 
     public void setIsLegalMove(boolean isLegalMove) {
 	this.isLegalMove = isLegalMove;
+    Logger.log("manipulates");
+
     }
 
     public boolean getIsLegalMove() {
