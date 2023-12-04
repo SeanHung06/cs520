@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.event.*;
+import logger.Logger;
 
 import model.Player;
 import model.RowGameModel;
